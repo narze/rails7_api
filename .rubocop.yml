@@ -1,0 +1,18 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "config/**/*"
+    - "bin/**/*"
+
+# Offense count: 17
+# This cop supports safe autocorrection (--autocorrect).
+# Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
+# SupportedStyles: single_quotes, double_quotes
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  Exclude:
+    - "Rakefile"
+    - "config.ru"
+    - "spec/rails_helper.rb"
