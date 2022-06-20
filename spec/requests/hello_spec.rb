@@ -2,10 +2,16 @@ require "rails_helper"
 
 RSpec.describe "HelloController", type: :request do
   describe "GET /hello" do
-    it "returns JSON message" do
+    subject do
       get "/hello"
+      response
+    end
 
-      expect(response).to have_http_status(:ok)
+    it { is_expected.to have_http_status(:ok) }
+
+    it "returns JSON message" do
+      subject
+
       expect(JSON.parse(response.body)["message"]).to eq "Hello, world!"
     end
   end
