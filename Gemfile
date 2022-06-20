@@ -42,6 +42,8 @@ group :development, :test do
   gem "rspec-rails", "~> 6.0.0.rc1"
   gem "dotenv-rails"
   gem "amazing_print"
+  gem "faker"
+  gem "fabrication"
 end
 
 group :development do
