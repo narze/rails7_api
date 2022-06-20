@@ -50,5 +50,9 @@ group :development do
   gem "ruby-lsp", require: false
   gem "rubocop", require: false
   gem "guard"
-  gem 'guard-rspec', require: false
+  gem "guard-rspec", require: false
+end
+
+group :test do
+  gem "shoulda-matchers"
 end

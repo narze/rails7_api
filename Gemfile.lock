@@ -233,6 +233,8 @@ GEM
       syntax_tree (>= 2.4)
     ruby-progressbar (1.11.0)
     shellany (0.0.1)
+    shoulda-matchers (5.1.0)
+      activesupport (>= 5.2.0)
     sorbet-runtime (0.5.10101)
     strscan (3.0.3)
     syntax_tree (2.7.1)
@@ -263,6 +265,7 @@ DEPENDENCIES
   rspec-rails (~> 6.0.0.rc1)
   rubocop
   ruby-lsp
+  shoulda-matchers
   tzinfo-data
 
 RUBY VERSION
