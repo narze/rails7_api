@@ -5,6 +5,7 @@ AllCops:
     - "db/**/*"
     - "config/**/*"
     - "bin/**/*"
+    - "vendor/bundle/**/*"
 
 # Offense count: 17
 # This cop supports safe autocorrection (--autocorrect).
